@@ -9,6 +9,7 @@ soup= BeautifulSoup(page.content,'html.parser')
 eq= soup.find_all('span', class_= 'tw-hidden d-lg-block font-bold')
 print(eq)
 
+
 monedas = list()
 for i in eq:
     monedas.append(i.text)
